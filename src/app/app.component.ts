@@ -10,6 +10,6 @@ export class AppComponent {
   public name = 'K';
   public value = '';
   onClick() {
-    console.log('save');
+    this.name = 'L';
   }
 }

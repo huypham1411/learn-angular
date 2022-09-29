@@ -1,3 +1,6 @@
 <app-headercomponent></app-headercomponent>
 <app-imagecomponent></app-imagecomponent>
 <h1 style="text-align: center">Say hello to {{name}}</h1>
+<input [(ngModel)]="value" type="text"><br>
+{{value}}
+<button (onClick)="onClick()">Click change name</button>
