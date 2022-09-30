@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeadercomponentComponent } from './headercomponent/headercomponent.component';
 import { SearchbarcomponentComponent } from './searchbarcomponent/searchbarcomponent.component';
 import { ImagecomponentComponent } from './imagecomponent/imagecomponent.component';
+import { DataInfoComponent } from './data-info/data-info.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { ImagecomponentComponent } from './imagecomponent/imagecomponent.compone
     HeadercomponentComponent,
     SearchbarcomponentComponent,
     ImagecomponentComponent,
+    DataInfoComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
