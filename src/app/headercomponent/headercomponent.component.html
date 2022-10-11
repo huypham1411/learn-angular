@@ -1,5 +1,17 @@
 <div class="header">
-    <img src="/assets/icons/logo.png" alt="logo" class="logo">
-    <app-searchbarcomponent></app-searchbarcomponent>
-    <button (click)="onClick()">Login</button>
+  <img src="/assets/icons/logo.png" alt="logo" class="logo" />
+  <app-searchbarcomponent></app-searchbarcomponent>
+  <div [ngClass]="'login-zone'">
+    <button
+      type="button"
+      (click)="onClickShow()"
+      ngClass="login-button btn btn-primary"
+    >
+      Login
+    </button>
+    <div [hidden]="hide" [ngClass]="'form-login'">
+      <app-login-form></app-login-form>
+    </div>
+  </div>
 </div>
+<app-navbar></app-navbar>

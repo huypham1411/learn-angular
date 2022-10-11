@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-imagecomponent',
   templateUrl: './imagecomponent.component.html',
-  styleUrls: ['./imagecomponent.component.css']
+  styleUrls: ['./imagecomponent.component.scss'],
 })
 export class ImagecomponentComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
