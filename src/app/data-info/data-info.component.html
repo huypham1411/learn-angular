@@ -1,15 +1,21 @@
 <button type="button" (click)="getInfoService1()">Data1</button>
-<ul class="list-group">
-    <li *ngFor="let info of infoRecieve1" class="list-group-item">{{info}}</li>
-</ul>
+<div>
+  <ul class="list-group" [hidden]="hide1">
+    <li *ngFor="let info of infoRecieve1" class="list-group-item">
+      {{ info }}
+    </li>
+  </ul>
+  Input data: <input type="text" [(ngModel)]="data" />
+  <button (click)="handleAdd1(data)">Add info</button>
+</div>
 <pre></pre>
 <button type="button" (click)="getInfoService2()">Data2</button>
 <ul class="list-group">
-    <li *ngFor="let info of infoRecieve2" class="list-group-item">{{info}}</li>
+  <li *ngFor="let info of infoRecieve2" class="list-group-item">{{ info }}</li>
 </ul>
 <pre></pre>
 <button type="button" (click)="getInfoService3()">Data3</button>
 <ul class="list-group">
-    <li *ngFor="let info of infoRecieve3" class="list-group-item">{{info}}</li>
+  <li *ngFor="let info of infoRecieve3" class="list-group-item">{{ info }}</li>
 </ul>
 <pre></pre>
