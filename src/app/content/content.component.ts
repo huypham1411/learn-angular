@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content.component.scss'],
 })
 export class ContentComponent implements OnInit {
-  name = '';
+  name = '123';
   value = '';
   var1 = 0;
   var2 = 0;

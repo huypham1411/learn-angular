@@ -9,12 +9,12 @@ import { User } from '../login-form/user';
 export class HeadercomponentComponent implements OnInit {
   hide = true;
   constructor() {}
-  username = '';
-  password = '';
-  user: User = {
-    username: this.username,
-    password: this.password,
-  };
+  // username = '';
+  // password = '';
+  // user: User = {
+  //   username: this.username,
+  //   password: this.password,
+  // };
 
   ngOnInit(): void {}
   onClickShow() {

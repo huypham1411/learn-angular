@@ -1,0 +1,6 @@
+<div>Booklist</div>
+<ul>
+  <ng-container *ngFor="let book of books; let i = index">
+    <app-book (bookEmitter)="addToCart($event)" [book]="book"></app-book>
+  </ng-container>
+</ul>
