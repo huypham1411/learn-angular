@@ -15,7 +15,7 @@ import { RecordsService } from '../records.service';
   providers: [RecordsService],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DataInfoComponent implements OnInit, OnChanges, OnDestroy {
+export class DataInfoComponent implements OnInit {
   hide1 = true;
   hide2 = true;
   hide3 = true;
@@ -39,16 +39,16 @@ export class DataInfoComponent implements OnInit, OnChanges, OnDestroy {
   }
   constructor(private rservice: RecordsService) {}
 
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log('onChanges', changes);
-  }
+  // ngOnChanges(changes: SimpleChanges): void {
+  //   console.log('onChanges', changes);
+  // }
 
   ngOnInit(): void {
     //if want to load data from API and want to display data on view you should place it here
     this.infoRecieve1 = [];
   }
 
-  ngOnDestroy(): void {
-    console.log('destroy');
-  }
+  // ngOnDestroy(): void {
+  //   console.log('destroy');
+  // }
 }

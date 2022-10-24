@@ -11,18 +11,22 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContentComponent } from './content/content.component';
 import { NavbarComponent } from './headercomponent/navbar/navbar.component';
 import { TodoappComponent } from './todoapp/todoapp.component';
+import { BooklistComponent } from './booklist/booklist.component';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadercomponentComponent,
     SearchbarcomponentComponent,
+    NavbarComponent,
     ImagecomponentComponent,
     DataInfoComponent,
     LoginFormComponent,
     ContentComponent,
-    NavbarComponent,
     TodoappComponent,
+    BooklistComponent,
+    BookComponent,
   ],
   imports: [BrowserModule, FormsModule, NgbModule],
   providers: [],
