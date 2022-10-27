@@ -1,0 +1,4 @@
+<div *ngIf="cart.length === 0">Add some items</div>
+<div *ngFor="let book of cart">
+  <div>Name: {{ book.name }}</div>
+</div>

@@ -1,5 +1,15 @@
-<app-headercomponent></app-headercomponent>
+<!-- <app-headercomponent></app-headercomponent>
 <app-imagecomponent></app-imagecomponent>
 <app-content></app-content>
 <app-data-info></app-data-info>
-<app-todoapp></app-todoapp>
+<app-todoapp></app-todoapp> -->
+<div>
+  <nav class="flex justify-between p-4 bg-purple-800 text-white">
+    <div><a routerLink="/book">Book</a></div>
+    <div><a routerLink="/">Home</a></div>
+    <div>
+      <a routerLink="/cart">Cart</a>
+    </div>
+  </nav>
+</div>
+<router-outlet></router-outlet>

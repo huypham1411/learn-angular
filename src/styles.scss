@@ -6,6 +6,9 @@
 // @import "../node_modules/bootstrap/scss/grid";
 // @import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/eva-icons/style/eva-icons.css";
+@import "../node_modules/tailwindcss/base.css";
+@import "../node_modules/tailwindcss/components.css";
+@import "../node_modules/tailwindcss/utilities.css";
 
 html, body {
     height: 100%;
@@ -21,3 +24,4 @@ body, * {
 *:not(i) {
     font-family: 'Roboto', sans-serif;
 }
+
