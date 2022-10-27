@@ -13,6 +13,8 @@ import { NavbarComponent } from './headercomponent/navbar/navbar.component';
 import { TodoappComponent } from './todoapp/todoapp.component';
 import { BooklistComponent } from './booklist/booklist.component';
 import { BookComponent } from './book/book.component';
+import { AppRoutingModule } from './app-routing.module';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +29,9 @@ import { BookComponent } from './book/book.component';
     TodoappComponent,
     BooklistComponent,
     BookComponent,
+    CartComponent,
   ],
-  imports: [BrowserModule, FormsModule, NgbModule],
+  imports: [BrowserModule, FormsModule, NgbModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

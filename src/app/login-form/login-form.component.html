@@ -1,8 +1,31 @@
 <div>
-  <form class="form">
-    username: <input type="text" [(ngModel)]="username" /><br />
-    password:
-    <input type="password" [(ngModel)]="password" />
+  <form class="form" (ngSubmit)="submit()">
+    <label for="username">username:</label>
+    <input
+      type="text"
+      [(ngModel)]="form.username"
+      name="username"
+      #username="ngModel"
+      required
+    />
+    <div
+      *ngIf="username.invalid && username.touched"
+      class="p-4 bg-red-300 text-red-800 rounded"
+    >
+      Username is required
+    </div>
+    <label for="password">password:</label>
+    <input
+      type="password"
+      [(ngModel)]="form.password"
+      name="password"
+      required
+      #password="ngModel"
+    />
+    <div [hidden]="password.valid" class="p-4 bg-red-300 text-red-800 rounded">
+      Password is required
+    </div>
+    <input type="submit" />
   </form>
   <br />
 </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from '../type/Book';
+import { CartService } from '../cart/cart.service';
 
 @Component({
   selector: 'app-booklist',
@@ -8,6 +9,10 @@ import { Book } from '../type/Book';
 })
 export class BooklistComponent implements OnInit {
   books: Book[] = [];
+  constructor(private CartService: CartService) {
+    this.createData();
+  }
+
   createData = () => {
     for (let i = 0; i < 10; i++) {
       this.books.push({
@@ -18,14 +23,9 @@ export class BooklistComponent implements OnInit {
     }
   };
 
-  cart: Book[] = [];
-
   addToCart(book: Book) {
     console.log(book);
-  }
-
-  constructor() {
-    this.createData();
+    this.CartService.setCart(book);
   }
 
   ngOnInit(): void {}
